@@ -30,7 +30,11 @@ public class EmployeeServiceImpl implements EmployeeService {
 			emp = dao.save(emp);
 		} catch (DataAccessException e) {
 //modified
+<<<<<<< HEAD
 			throw new DatabaseException("Now here is  issue with database!! "+e.getMessage());
+=======
+			throw new DatabaseException("Now here is issue with database!! "+e.getMessage());
+>>>>>>> branch 'main' of https://github.com/Arpita104/Spring-REST-Mysql-App
 		}
 		return emp;
 	}
