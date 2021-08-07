@@ -37,6 +37,7 @@ public class EmpReadController {
 	@ApiOperation(value = "Find All the Employee", notes = "Provides all the employee records")
 	public ResponseEntity<List<Employee>> getAllEmp() throws DatabaseException  {
 		List<Employee> list=service.getAllEmp();
+		System.out.println("This is from app Branch");
 		return new ResponseEntity<List<Employee>>(list,HttpStatus.OK);
 	}
 	
